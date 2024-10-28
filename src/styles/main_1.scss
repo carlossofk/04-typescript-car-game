@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffff0b;
+  font-family: Arial, sans-serif;
+}
+
+.gameArea {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #181818;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.road {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 200vh;
+  background: linear-gradient(#333 25%, #555 25%, #555 50%, #333 50%);
+  background-size: 100% 100px;
+  animation: scrollRoad 3s linear infinite;
+}
+
+@keyframes scrollRoad {
+  0% { top: -100vh; }
+  100% { top: 0; }
+}
+
+.playerCar, .opponentCar {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background: red;
+  border-radius: 10px;
+}
+
+.playerCar {
+  bottom: 20px;
+  left: calc(50% - 25px);
+  background-color: red;
+  background-size: contain;
+}
+
+.opponentCar {
+  top: 0;
+  left: calc(50% - 25px);
+  background: rgb(0, 255, 255);
+  background-size: contain;
+}
+
+.score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+}

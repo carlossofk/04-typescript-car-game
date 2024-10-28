@@ -1,0 +1,18 @@
+// src/styles/components/_lobby.scss
+.lobby {
+  &__players-list {
+    margin: 1em 0;
+  }
+
+  &__add-player-btn, &__start-btn {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    &:disabled {
+      background-color: #95a5a6;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/main.scss" />
+    <title>Juego de Carreras</title>
+</head>
+
+<body>
+
+    <main id="main-container" class="container__body ">
+        <section class="menu" id="menu-section">
+            <h1 class="menu__title">Juego de Carreras</h1>
+            <div class="menu__wrapper-menu">
+                <input id="input-add-player" class="menu__input-text" type="text" placeholder="Nick name" required />
+
+                <button class="menu__start-game" id="start-game">
+                    Ingresar al Juego
+                </button>
+            </div>
+
+            <ul class="menu__players" id="players-list"> </ul>
+        </section>
+
+
+        <section class="game-zone" id="game-zone-section">
+            <h2 class="game-zone__title">Carrera en Progreso</h2>
+            <div class="game-track" id="game-track"></div>
+        </section>
+
+    </main>
+
+    <script src="./src/scripts/menu/index.ts" type="module"></script>
+</body>
+
+</html>

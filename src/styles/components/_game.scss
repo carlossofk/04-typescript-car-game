@@ -1,0 +1,74 @@
+
+// ------------------------
+// ===> Variables
+// ------------------------
+$track-height:50px;
+$car-width:   30px;
+$car-height:  30px;
+
+.game-zone  {
+    display: none;
+    padding: 10px;
+    &--active {
+        display: block;
+
+    }
+}
+
+.game-track{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top:30px;
+
+    // padding:30px;
+
+    &__container{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        padding-inline: 30px;
+        width: 100%;
+    }
+
+    &___player-info{
+        background-color: red;
+        border: 1px solid red;
+    }
+
+    &__player-track{
+        position: relative;
+        height: $track-height;
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+
+ 
+
+    &__player {
+        position: absolute;
+        top: calc(100% - $car-height);
+        left: 0;
+        width: $car-width;
+        height: $car-height;
+        border-radius: 20%;
+        transition: left 0.1s linear;
+        align-content: center;
+
+    }
+
+    
+    &__player-icon {
+        color: #4aa3b9;
+        fill: rgb(200, 118, 23);
+    }
+}
+
+.img-cls{
+    color: #4aa3b9;
+    fill: rgb(200, 118, 23);
+    clip-path: rgb(200, 118, 23);
+}
+
+
+
+
